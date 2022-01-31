@@ -26,6 +26,14 @@
 
         <?php include('tableur.php'); ?>
 
+        <script>
+            var i = "coucou florent";
+            console.log(i);
+            i += " voila la suite";
+            console.log(i);
+        </script>
+
     </form>
 </body>
 </html>
+
