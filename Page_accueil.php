@@ -3,11 +3,12 @@
 <header>
     <title> Page d'accueil</title>
     <?php include('bdd.php'); ?>
+    <link rel="stylesheet" href="style.css" />
 </header>
 <body>
 
 
-    <H1 style="text-align: center;"> 
+    <H1 style="text-align: center;" title="Vous ne le regretterez pas !">> 
         Fiche de révion cahier Anglais
     </H1>
 
@@ -16,7 +17,7 @@
     </h2>
 
     <form method="post" action="tempon.php">
-        <label for="numero_page">Numéro de la page </label>
+        <label for="numero_page"> <em> Numéro de la page </em></label>
         <input type="text" id="numero_page" name="numero_page" required
         minlength="4" maxlength="8" size="10">
         <button>
@@ -25,13 +26,7 @@
 
 
         <?php include('tableur.php'); ?>
-
-        <script>
-            var i = "coucou florent";
-            console.log(i);
-            i += " voila la suite";
-            console.log(i);
-        </script>
+    
 
     </form>
 </body>
